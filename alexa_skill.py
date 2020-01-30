@@ -38,7 +38,7 @@ def homepage():
 
 @ask.launch
 def start_skill():
-    welcome_message = "Hello you idiot!! Would like to hear the news?"
+    welcome_message = "Hello!! Would like to hear the news?"
     return question(welcome_message)
 
 @ask.intent('YesIntent')
@@ -49,7 +49,7 @@ def share_headlines():
 
 @ask.intent('NoIntent')
 def no_intent():
-    bye_text = "Okay sure. Seems like you prefer not to be enlightened with the news. Okay..... Bye"
+    bye_text = "Okay sure."
     return statement(bye_text)
 
 if __name__ == '__main__':
